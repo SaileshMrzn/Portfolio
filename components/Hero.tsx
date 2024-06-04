@@ -1,7 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Button from "./ui/Button";
+import Button from "./Button";
 import { VscArrowSmallRight } from "react-icons/vsc";
 
 const Hero = () => {
