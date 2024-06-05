@@ -1,6 +1,5 @@
-import Grid from "@/components/Grid";
+import Cards from "@/components/Cards";
 import Hero from "@/components/Hero";
-import { AuroraBackgroundDemo } from "@/components/Hero2";
 import Technologies from "@/components/Technologies";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Image from "next/image";
@@ -14,6 +13,7 @@ export default function Home() {
         {/* <AuroraBackgroundDemo /> */}
         {/* <Grid /> */}
         <Technologies />
+        <Cards />
       </div>
     </main>
   );

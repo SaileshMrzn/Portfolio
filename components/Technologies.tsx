@@ -14,11 +14,11 @@ const Technologies = () => {
 
   return (
     <div>
-      <div className="md:h-[50rem] h-[85rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.02] bg-grid-black/[0.2] relative flex items-center justify-center flex-col">
+      <div className="md:h-screen h-[85rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.02] bg-grid-black/[0.2] relative flex items-center justify-center flex-col">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
-        <div className="absolute top-48">
+        <div className="absolute top-36">
           <div className="heading text-2xl md:text-2xl lg:text-3xl font-bold z-20 bg-clip-text text-white relative">
             Technologies
           </div>
@@ -67,7 +67,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="content w-[40vh] md:w-[870px] text-white flex justify-center flex-wrap md:mt-64 -mt-44 h-[20rem] ">
+        <div className="content w-[40vh] md:w-[870px] text-white flex justify-center flex-wrap md:mt-48 -mt-72 h-[20rem] ">
           {Tech.filter(
             (item) =>
               activeCategory === "all" || item.category === activeCategory
