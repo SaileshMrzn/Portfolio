@@ -41,8 +41,8 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#9955c6", //  #CBACF9
-
+        purple: "#B721FF", //  #CBACF9
+        gradient: "linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -155,6 +155,10 @@ const config = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+      },
+      backgroundImage: {
+        // gradient: "linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)",
+        gradient: "linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); ",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

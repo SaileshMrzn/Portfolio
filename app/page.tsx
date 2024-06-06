@@ -1,6 +1,7 @@
 import Cards from "@/components/Cards";
 import Hero from "@/components/Hero";
 import Technologies from "@/components/Technologies";
+import About from "@/components/About";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Image from "next/image";
 
@@ -11,7 +12,8 @@ export default function Home() {
         <FloatingNav navItems={[{ name: "Home", link: "/" }]} />
         <Hero />
         {/* <AuroraBackgroundDemo /> */}
-        {/* <Grid /> */}
+        {/* <Gr>i>d /> */}
+        <About />
         <Technologies />
         <Cards />
       </div>

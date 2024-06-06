@@ -87,3 +87,13 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+@layer utilities {
+  .text-gradient {
+    /* background: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%); */
+    background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
