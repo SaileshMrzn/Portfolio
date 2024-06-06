@@ -14,7 +14,7 @@ const Button = ({
   return (
     <div>
       <button
-        className={`w-full md:w-50 px-6 py-2 my-5 bg-purple text-white rounded-lg font-bold transform hover:translate-x-1 transition-all ease-in-out duration-400 flex items-center gap-2 ${otherClasses}`}
+        className={`w-full md:w-50 px-6 py-3 my-5 bg-transparent border text-white rounded-lg text-sm font-light transform hover:bg-slate-800 transition-all ease-in-out duration-400 flex items-center gap-2 ${otherClasses}`}
         onClick={handleClick}
       >
         {title}

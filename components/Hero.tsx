@@ -2,7 +2,8 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Button from "./Button";
-import { VscArrowSmallRight } from "react-icons/vsc";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { SocialsButton } from "./SocialsButton";
 
 const Hero = () => {
   return (
@@ -25,18 +26,17 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Ohh, we have a visitor...
-          </h2>
-
+          </h2> */}
           <TextGenerateEffect
-            words="Heyy! Welcome to my Portfolio"
+            words="Hello, I'm Sailesh Maharjan"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
+          <p>A Frontend/MERN stack developer.</p>
 
-          <p>I'm Sailesh, a Frontend Developer.</p>
-
-          <Button title="Know more" icon={<VscArrowSmallRight />} />
+          <Button title="Download My Resume" icon={<MdOutlineFileDownload />} />
+          <SocialsButton />
         </div>
       </div>
     </div>
