@@ -3,6 +3,7 @@ import React from "react";
 import { HoverBorderGradient } from "./ui/hoverButton";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import Link from "next/link";
 
 export function SocialsButton() {
   return (
@@ -12,7 +13,12 @@ export function SocialsButton() {
         className="dark:bg-black bg-white text-black dark:text-white flex items-center justify-center space-x-2 h-[40px] w-[44px]"
       >
         <span>
-          <FaLinkedinIn />
+          <Link
+            href="https://www.linkedin.com/in/sailesh-maharjan-53450a241/"
+            target="_blank"
+          >
+            <FaLinkedinIn />
+          </Link>
         </span>
       </HoverBorderGradient>
       <HoverBorderGradient
@@ -20,7 +26,9 @@ export function SocialsButton() {
         className="dark:bg-black bg-white text-black dark:text-white flex items-center justify-center space-x-2 h-[40px] w-[44px]"
       >
         <span>
-          <FaGithub />
+          <Link href="https://github.com/SaileshMrzn" target="_blank">
+            <FaGithub />
+          </Link>
         </span>
       </HoverBorderGradient>
       <HoverBorderGradient
@@ -28,7 +36,12 @@ export function SocialsButton() {
         className="dark:bg-black bg-white text-black dark:text-white flex items-center justify-center space-x-2 h-[40px] w-[44px]"
       >
         <span>
-          <GrMail />
+          <Link
+            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDDHxZchWclbbssLzvnlBCNZjhnMRcFxpFRnRQnWwKsxPQcgLHGjdQlNxHKkbqGMDCWchR"
+            target="_blank"
+          >
+            <GrMail />
+          </Link>
         </span>
       </HoverBorderGradient>
     </div>

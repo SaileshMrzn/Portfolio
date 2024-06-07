@@ -1,8 +1,8 @@
 export const navItems = [
+  { name: "Home", link: "#" },
   { name: "About", link: "#about" },
+  { name: "Technologies", link: "#technologies" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -285,7 +285,7 @@ export const Tech = [
     id: 7,
     title: "Redux",
     thumbnail: "/redux.png",
-    category: "backend",
+    category: "frontend",
   },
   {
     id: 8,

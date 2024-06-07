@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -6,6 +8,12 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { SocialsButton } from "./SocialsButton";
 
 const Hero = () => {
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/uc?export=download&id=12IveRjr7SfQmBTLIdV46MMrcyZRMZCG9",
+      "_blank"
+    );
+  };
   return (
     <div>
       <div className="pb-20 pt-36">
@@ -26,16 +34,17 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Ohh, we have a visitor...
-          </h2> */}
           <TextGenerateEffect
             words="Hello, I'm Sailesh Maharjan"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p>A Frontend/MERN stack developer.</p>
 
-          <Button title="Download My Resume" icon={<MdOutlineFileDownload />} />
+          <Button
+            title="Download My Resume"
+            icon={<MdOutlineFileDownload />}
+            handleClick={handleDownload}
+          />
           <SocialsButton />
         </div>
       </div>

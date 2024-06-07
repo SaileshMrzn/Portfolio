@@ -1,20 +1,45 @@
+"use client";
 import React from "react";
-// import { motion } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
+  });
+
+  const variants = {
+    hidden: { opacity: 0, y: 60 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  };
   return (
     <div>
-      <div className="md:h-screen h-[55rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col">
+      <div
+        className="md:h-screen h-[55rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
+        id="about"
+      >
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
         <div className="max-w-5xl mx-auto px-8">
-          <div className="heading text-2xl md:text-2xl lg:text-3xl font-bold z-20 bg-clip-text text-white relative mt-10">
-            About
+          <div className="text-3xl md:lext-4xl font-bold z-20 bg-clip-text text-white relative mt-10 text-center">
+            About Me
           </div>
 
-          <div className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10">
+          <motion.div
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={inView ? "show" : "hidden"}
+            className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10"
+          >
             <p>
               I'm currently a third-year student at Himalaya College of
               Engineering studying{" "}
@@ -35,7 +60,7 @@ const About = () => {
                 interested in working with me, feel free to reach out!
               </span>
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
