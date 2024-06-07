@@ -22,13 +22,13 @@ const About = () => {
   return (
     <div>
       <div
-        className="md:h-screen h-[55rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
+        className="md:h-screen h-[55rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-end lg:justify-center flex-col"
         id="about"
       >
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
 
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="">
           <div className="text-3xl md:lext-4xl font-bold z-20 bg-clip-text text-white relative mt-10 text-center">
             About Me
           </div>
@@ -38,7 +38,7 @@ const About = () => {
             variants={variants}
             initial="hidden"
             animate={inView ? "show" : "hidden"}
-            className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10"
+            className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10 px-6 md:px-4"
           >
             <p>
               I&apos;m currently a third-year student at Himalaya College of

@@ -26,7 +26,7 @@ const Technologies = () => {
             Technologies
           </div>
 
-          <div className="navigation mt-12 flex gap-3 flex-wrap justify-center items-center">
+          <div className="navigation mt-12 flex gap-3 flex-wrap justify-center items-center px-4">
             <span
               className={` py-[16px] px-[32px] rounded-lg cursor-pointer ${
                 activeCategory === "all"
@@ -70,7 +70,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="content w-[40vh] md:w-[870px] text-white flex justify-center flex-wrap md:mt-48 -mt-72 h-[20rem] ">
+        <div className="content w-[40vh] md:w-[870px] text-white flex justify-center flex-wrap md:mt-48 -mt-72 h-[20rem] p-6">
           {Tech.filter(
             (item) =>
               activeCategory === "all" || item.category === activeCategory
