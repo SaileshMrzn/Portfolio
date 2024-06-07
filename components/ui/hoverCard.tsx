@@ -65,7 +65,10 @@ export const HoverEffect = ({
             <CardDescription>{item.description}</CardDescription>
             <div className="flex mt-6 gap-3 flex-wrap items-center">
               {item.iconLists.map((icon, index) => (
-                <div className="border w-fit h-8 rounded-lg p-2 flex items-center justify-start gap-2 py-5 px-2 text-sm bg-slate-800 bg-opacity-40">
+                <div
+                  key={index}
+                  className="border w-fit h-8 rounded-lg p-2 flex items-center justify-start gap-2 py-5 px-2 text-sm bg-slate-800 bg-opacity-40"
+                >
                   <Image
                     src={icon}
                     width={24}

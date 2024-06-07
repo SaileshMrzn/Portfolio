@@ -41,23 +41,24 @@ const About = () => {
             className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10"
           >
             <p>
-              I'm currently a third-year student at Himalaya College of
+              I&apos;m currently a third-year student at Himalaya College of
               Engineering studying{" "}
               <span className="text-gradient">
                 Bachelors in Computer Application (BCA)
               </span>
-              . I've been fascinated about coding and always had a keen interest
-              in emerging technologies ever since high school. I started web
-              development as a hobby, learning web techlogies like HTML, CSS and
-              JavaScript. Nowadays, I spend most of my time crafting
-              applications on the web.
+              . I&apos;ve been fascinated about coding and always had a keen
+              interest in emerging technologies ever since high school. I
+              started web development as a hobby, learning web techlogies like
+              HTML, CSS and JavaScript. Nowadays, I spend most of my time
+              crafting applications on the web.
             </p>
             <br />
             <p>
               <span className="text-gradient">
-                I'm currently looking for full-time or part-time software
-                engineering opportunities starting in June/July 2024. If you're
-                interested in working with me, feel free to reach out!
+                I&apos;m currently looking for full-time or part-time software
+                engineering opportunities starting in June/July 2024. If
+                you&apos;re interested in working with me, feel free to reach
+                out!
               </span>
             </p>
           </motion.div>

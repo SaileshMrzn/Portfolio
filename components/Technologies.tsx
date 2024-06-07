@@ -76,6 +76,7 @@ const Technologies = () => {
               activeCategory === "all" || item.category === activeCategory
           ).map((item) => (
             <div
+              key={item.id}
               className={`h-[120px] w-[120px] font-extralight text-[14px] bg-slate-800 bg-opacity-40 text-center flex items-center justify-center mx-3 my-3 rounded-lg flex-col hover:scale-110 transition-all ease-in-out duration-200`}
             >
               <div>
