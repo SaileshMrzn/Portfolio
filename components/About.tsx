@@ -38,7 +38,7 @@ const About = () => {
             variants={variants}
             initial="hidden"
             animate={inView ? "show" : "hidden"}
-            className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10 px-6 md:px-4"
+            className="w-[400px] md:w-[600px] text-center mt-12 leading-8 md:leading-10 px-8 xs:px-2 md:px-4"
           >
             <p>
               I&apos;m currently a third-year student at Himalaya College of

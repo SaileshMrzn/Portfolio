@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <div>
       <div
-        className="md:h-[120vh] h-[92rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
+        className="h-[110rem] xs:h-[85rem] sm:h-[110vh] md:h-[120vh] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
         id="projects"
       >
         {/* Radial gradient for the container to give a faded look */}

@@ -15,7 +15,7 @@ const Technologies = () => {
   return (
     <div>
       <div
-        className="md:h-screen h-[85rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
+        className="h-[90rem] xs:h-[90rem] md:h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative flex items-center justify-center flex-col"
         id="technologies"
       >
         {/* Radial gradient for the container to give a faded look */}
@@ -70,7 +70,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="content w-[40vh] md:w-[870px] text-white flex justify-center flex-wrap md:mt-48 -mt-72 h-[20rem] px-6 lg:px-0">
+        <div className="content w-[50vh] md:w-[870px] text-white flex justify-center flex-wrap -mt-96 md:mt-48 h-[20rem] px-6 lg:px-0">
           {Tech.filter(
             (item) =>
               activeCategory === "all" || item.category === activeCategory
