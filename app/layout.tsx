@@ -8,6 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sailesh's Porfolio",
   description: "Sailesh Maharjan - Frontend/Full-stack Developer",
+  openGraph: {
+    title: "Sailesh's Portfolio",
+    description: "Sailesh Maharjan - Frontend/Full-stack Developer",
+    url: "https://saileshmaharjan.com.np",
+    type: "website",
+    images: [
+      {
+        url: "https://saileshmaharjan.com.np/opengraph-image.png",
+        width: 800,
+        height: 600,
+        alt: "Sailesh's Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
