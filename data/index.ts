@@ -94,8 +94,8 @@ export const projects = [
       "Node.js",
       "Rest API",
     ],
-    link: "https://github.com/SaileshMrzn/OnlineStore-MERN",
-    date: "May 2024 - Present",
+    link: "https://online-store-mern.vercel.app/",
+    date: "May 2024 - June 2024",
   },
   {
     id: 2,
@@ -310,5 +310,11 @@ export const Tech = [
     title: "Node.js",
     thumbnail: "/node.png",
     category: "backend",
+  },
+  {
+    id: 12,
+    title: "React Native",
+    thumbnail: "/react.png",
+    category: "frontend",
   },
 ];
